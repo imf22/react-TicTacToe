@@ -108,12 +108,14 @@
   
   .board-info{
     margin: 2rem 0rem;
+    padding-top: 0.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 0.3rem solid whitesmoke;
+    width: 18rem;
   }
-
 
   hr.rounded {
     margin: 0;
@@ -123,6 +125,14 @@
     border-radius: 5px;
   }
 
+  /* hr.rounded {
+    margin: 2rem  0;
+    padding: 0;
+    width: 18rem;
+    border-top: 0.3rem solid whitesmoke;
+    border-radius: 5px;
+  } */
+
   .move-item {
     background-color: transparent;
     color: whitesmoke;
@@ -131,4 +141,6 @@
     border: none;
     padding: 0.5rem;
   }
+
+
 
