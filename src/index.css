@@ -1,68 +1,33 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/hashtag.css');
+
+* {
+box-sizing: border-box;
+
+}
+
+body {
+font-family: sans-serif;
+margin: 20px;
+height: 47rem;
+padding: 0;
+}
+
+
 * {
     box-sizing: border-box;
+}
 
-  }
-  
-  body {
-    font-family: sans-serif;
-    margin: 20px;
-    height: 47rem;
-    padding: 0;
-  }
-  
-  h1 {
-    margin-top: 0;
-    font-size: 22px;
-  }
-  
-  h2 {
-    margin-top: 0;
-    font-size: 20px;
-  }
-  
-  h3 {
-    margin-top: 0;
-    font-size: 18px;
-  }
-  
-  h4 {
-    margin-top: 0;
-    font-size: 16px;
-  }
-  
-  h5 {
-    margin-top: 0;
-    font-size: 14px;
-  }
-  
-  h6 {
-    margin-top: 0;
-    font-size: 12px;
-  }
-  
-  code {
-    font-size: 1.2em;
-  }
-  
-  ul {
-    padding-inline-start: 20px;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
+body {
     font-family: sans-serif;
     margin: 20px;
     padding: 0;
     background: rgb(164,0,128);
     background: radial-gradient(circle, rgba(164,0,128,1) 25%, rgba(242,12,70,1) 100%); 
-  }
-  
-  .square {
+}
+
+.square {
     background: transparent;
-    /* border: 0.2em solid whitesmoke; */
+    border: none;
     float: left;
     font-size: 2rem;
     font-weight: bold;
@@ -72,41 +37,51 @@
     text-align: center;
     width: 5rem;
     height: 5rem;
-    /* width: 34px; */
-  }
-  
-  .board-row:after {
+}
+
+.vl1 {
+    float: left;
+    margin:-0.15rem 0 ;
+    border-right: 0.5rem solid whitesmoke;
+    height: 5.2rem;
+    
+}
+
+.hl {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    border-top: 0.5rem solid whitesmoke;
+    padding-bottom: 0.15rem;
+
+}
+
+.board-row:after {
     clear: both;
     content: '';
     display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
+}
 
-  .game {
+.status {
+    margin-bottom: 10px;
+}
+
+.game {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-  }
+}
 
-  .vl {
-    border-left: 6px solid green;
-    height: 500px;
-  }
-
-  
-  .game-info {
+.game-info {
     display: flex;
     justify-content: center;
     color: whitesmoke;
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  
-  .board-info{
+}
+
+.board-info{
     margin: 2rem 0rem;
     padding-top: 0.25rem;
     display: flex;
@@ -115,32 +90,21 @@
     align-items: center;
     border-top: 0.3rem solid whitesmoke;
     width: 18rem;
-  }
+}
 
-  hr.rounded {
+hr.rounded {
     margin: 0;
     padding: 0;
     width: 13rem;
     border-top: 1px solid whitesmoke;
     border-radius: 5px;
-  }
+}
 
-  /* hr.rounded {
-    margin: 2rem  0;
-    padding: 0;
-    width: 18rem;
-    border-top: 0.3rem solid whitesmoke;
-    border-radius: 5px;
-  } */
-
-  .move-item {
+.move-item {
     background-color: transparent;
     color: whitesmoke;
     font-size: 1rem;
     font-weight: bold;
     border: none;
     padding: 0.5rem;
-  }
-
-
-
+}

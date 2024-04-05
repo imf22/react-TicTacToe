@@ -35,19 +35,31 @@ function Board({isXTurn, squares, onPlay}) {
             <p className='game-info'>{status}</p>
             <div className="board-row">
                 <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+                <div className='vl1'></div>
                 <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
+                <div className='vl1'></div>
                 <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
             </div>
+            <div className='hl'></div>
             <div className="board-row">
                 <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
+                <div className='vl1'></div>
                 <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
+                <div className='vl1'></div>
                 <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+                
             </div>
+            <div className='hl'></div>
             <div className="board-row">
                 <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
+                <div className='vl1'></div>
                 <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
+                <div className='vl1'></div>
                 <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
             </div>
+
+            
+            
         </>
         );
   }
