@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+
   }
   
   body {
     font-family: sans-serif;
     margin: 20px;
+    height: 47rem;
     padding: 0;
   }
   
@@ -54,21 +56,23 @@
     font-family: sans-serif;
     margin: 20px;
     padding: 0;
+    background: rgb(164,0,128);
+    background: radial-gradient(circle, rgba(164,0,128,1) 25%, rgba(242,12,70,1) 100%); 
   }
   
   .square {
-    background: #fff;
-    border: 1px solid #999;
+    background: transparent;
+    border: 0.2em solid whitesmoke;
     float: left;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
+    color: whitesmoke;
+
+    padding: 0.5rem;
     text-align: center;
-    width: 34px;
+    width: 5rem;
+    height: 5rem;
+    /* width: 34px; */
   }
   
   .board-row:after {
@@ -80,12 +84,51 @@
   .status {
     margin-bottom: 10px;
   }
+
   .game {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
   }
   
   .game-info {
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   
+  .board-info{
+    margin: 2rem 0rem;
+  }
+
+  table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 18rem;
+    border-top: 0.3rem solid whitesmoke;
+    padding-top: 0.5rem;
+  }
+
+  hr.rounded {
+    margin: 0;
+    padding: 0;
+    width: 13rem;
+    border-top: 1px solid whitesmoke;
+    border-radius: 5px;
+  }
+
+  .move-item {
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+  }
+

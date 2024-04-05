@@ -32,7 +32,7 @@ function Board({isXTurn, squares, onPlay}) {
 
     return (
         <>
-            <p>{status}</p>
+            <p className='game-info'>{status}</p>
             <div className="board-row">
                 <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
                 <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -81,11 +81,16 @@ export default function Game(){
 
         // Return React button component with generated description
         return(
-            <li key={move}>
-                <button onClick={() => jumpTo(move)}>
-                    {desciprtion}
-                </button>
-            </li>
+            <>
+                <tr key={move}>
+                    <button className="move-item" onClick={() => jumpTo(move)}>
+                        {desciprtion}
+                    </button>
+                </tr>
+                <tr>
+                <hr class="rounded"></hr>
+                </tr>
+            </>
         )
     })
 
@@ -95,7 +100,7 @@ export default function Game(){
                 <Board isXTurn={isXNext} squares={currentSquares} onPlay={handlePlay}/>
             </div>
             <div className="board-info">
-            <ol>{moves}</ol>
+            <table>{moves}</table>
             </div>
         </div>
     );
