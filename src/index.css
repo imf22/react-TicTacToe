@@ -62,7 +62,7 @@
   
   .square {
     background: transparent;
-    border: 0.2em solid whitesmoke;
+    /* border: 0.2em solid whitesmoke; */
     float: left;
     font-size: 2rem;
     font-weight: bold;
@@ -91,6 +91,12 @@
     justify-content: center;
     align-items: center; 
   }
+
+  .vl {
+    border-left: 6px solid green;
+    height: 500px;
+  }
+
   
   .game-info {
     display: flex;
@@ -102,18 +108,12 @@
   
   .board-info{
     margin: 2rem 0rem;
-  }
-
-  table {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    width: 18rem;
-    border-top: 0.3rem solid whitesmoke;
-    padding-top: 0.5rem;
   }
+
 
   hr.rounded {
     margin: 0;

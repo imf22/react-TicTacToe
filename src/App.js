@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 
 function Square({value, onSquareClick}){
     return (
@@ -81,16 +81,13 @@ export default function Game(){
 
         // Return React button component with generated description
         return(
-            <>
-                <tr key={move}>
-                    <button className="move-item" onClick={() => jumpTo(move)}>
-                        {desciprtion}
-                    </button>
-                </tr>
-                <tr>
-                <hr class="rounded"></hr>
-                </tr>
-            </>
+            <React.Fragment key={move}>
+                <button className="move-item" onClick={() => jumpTo(move)}>
+                    {desciprtion}
+                </button>
+                
+                <hr className="rounded"></hr>
+            </React.Fragment>
         )
     })
 
@@ -100,7 +97,7 @@ export default function Game(){
                 <Board isXTurn={isXNext} squares={currentSquares} onPlay={handlePlay}/>
             </div>
             <div className="board-info">
-            <table>{moves}</table>
+                {moves}
             </div>
         </div>
     );
