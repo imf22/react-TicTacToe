@@ -26,6 +26,9 @@ function Board({isXTurn, squares, onPlay}) {
     if (winner) {
         status = "Winner "+ winner;
     }
+    else if (calculateIfFull(squares)){
+        status = 'Draw!';
+    }
     else {
         status = "Next player: " + (isXTurn? "X" : "O");
     }
@@ -88,7 +91,7 @@ export default function Game(){
             desciprtion = `Go to move #${move}`;
         }
         else {
-            desciprtion = 'Go to move start';
+            desciprtion = 'Clear Board';
         }
 
         // Return React button component with generated description
@@ -133,5 +136,14 @@ function calculateWinner(squares) {
         }
     }
     return null;
+}
+
+function calculateIfFull(squares){
+    for ( var i = 0, l = squares.length; i < l; i++ )    {
+        if ( 'undefined' == typeof squares[i] || null === squares[i] ){
+            return false
+        }
+    }
+    return true;
 }
   
