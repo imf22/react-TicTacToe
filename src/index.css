@@ -1,7 +1,6 @@
 
 * {
     box-sizing: border-box;
-    /* font-family: 'Source+Code+Pro', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 
@@ -23,7 +22,6 @@ h1{
     font-family: "Kode Mono", monospace;
     font-style: normal;
     color: rgba(28, 28, 28, 0.714);
-    /* color: whitesmoke; */
 }
 
 h2{
@@ -32,14 +30,12 @@ h2{
     font-style: italic;
     font-size: medium;
     color: rgba(28, 28, 28, 0.714);
-
 }
 
 body {
     font-family: sans-serif;
     margin: 0.75rem 1rem;
     padding: 0;
-    /* background: black; */
     background: rgb(164,0,128);
     background: radial-gradient(circle, rgba(164,0,128,1) 25%, rgba(242,12,70,1) 100%); 
 }
@@ -51,18 +47,15 @@ body {
     font-size: 3rem;
     font-weight: bold;
     color: whitesmoke;
-
     padding: 0.5rem;
     text-align: center;
     width: 5rem;
     height: 5rem;
-
-    transition: background 0.75s ease; /* Apply transition to the base state */
+    transition: background 0.75s ease; 
 }
 
 .square:hover {
     background: radial-gradient(circle, rgba(240, 248, 255, 0.5), transparent, transparent);
-    /* The transition is already defined in the base state, so it's applied here automatically */
 }
 
 .vl1 {
@@ -71,7 +64,6 @@ body {
     border-right: 0.5rem solid whitesmoke;
     height: 5.2rem;
     box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
-    
 }
 
 .hl {
@@ -81,8 +73,6 @@ body {
     border-top: 0.5rem solid whitesmoke;
     padding-bottom: 0.15rem;
     box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
-
-
 }
 
 .board-row:after {
@@ -104,7 +94,6 @@ body {
 
 .game-info {
     display: flex;
-    margin-top: ;
     justify-content: center;
     color: whitesmoke;
     font-size: 1.5rem;

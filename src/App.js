@@ -60,9 +60,6 @@ function Board({isXTurn, squares, onPlay}) {
                 <div className='vl1'></div>
                 <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
             </div>
-
-            
-            
         </>
         );
   }
